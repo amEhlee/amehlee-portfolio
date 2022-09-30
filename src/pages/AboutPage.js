@@ -3,6 +3,10 @@ import React from "react";
 export default function AboutPage() {
   return (
     <>
+
+      <p className="text-3xl font-bold underline">
+        Hello world!
+      </p>
       <h1>Hi. I'm Elie, Nice to meet you!</h1>
       <p>
         I am a seasoned software expert who has developed products for
