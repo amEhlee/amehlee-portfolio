@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ExperiencePage() {
   return (
-    <>
+    <section>
       <h1>Experience Page</h1>
       <p>
         <hr/>
@@ -14,6 +14,6 @@ export default function ExperiencePage() {
         Sketch Principle Abstract
         <hr/>
       </p>
-    </>
+    </section>
   );
 }

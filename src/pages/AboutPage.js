@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AboutPage() {
   return (
-    <>
+    <section>
 
       <p className="text-3xl font-bold underline">
         Hello world!
@@ -24,6 +24,6 @@ export default function AboutPage() {
         enterprise corporations. What would you do if you had a software expert
         available at your fingertips?
       </p>
-    </>
+    </section>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ContactPage() {
   return (
-    <>
+    <section>
       <h1>So, Lets hear about your project!</h1>
       <p>I'm free to contact using the resources down below</p>
       <label for="fname">Name:</label>
@@ -22,6 +22,6 @@ export default function ContactPage() {
         name="textarea"
         placeholder="Your name.."
       />
-    </>
+    </section>
   );
 }

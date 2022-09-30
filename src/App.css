@@ -1,7 +1,6 @@
 @media all {
     body {
-        font-family: 'Poppins', sans-serif;
-        background: #333;
-        color:aliceblue
+        background: ghostwhite;
+        min-width: 700px;
     }
 }
