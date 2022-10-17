@@ -23,21 +23,31 @@ function NavBarItem(props) {
 
 export default function NavBar() {
   return (
-    <section>
-      <nav className="container2 flex items-center py-4 mt-4 justify-between">
-        <div className="Logo ml-8">
-          <a href="#home">Logo</a>
-        </div>
-        <ul className="hidden sm:flex flex-1 justify-end items-center gap-12">
-          <NavBarItem refrencetag="#about" numbering="01. " content="About" />
-          <NavBarItem refrencetag="#experience" numbering="02. " content="Experience"/>
-          <NavBarItem refrencetag="#projects" numbering="03. " content="Projects"/>
-          <NavBarItem refrencetag="#contact" numbering="04. " content="Contact"/>
-        </ul>
-        <div className="flex sm:hidden justify-end mr-12 cursor-pointer md:hidden bg-slate-500 fixed inset-0 left-1/4">
-          <HamburgerMenuSVG/>
-        </div>
-      </nav>
-    </section>
+    <nav className="flex items-center py-4 justify-between bg-slate-600">
+      <div className="Logo ml-8">
+        <a href="#home">Logo</a>
+      </div>
+      <ul className="hidden sm:flex flex-1 justify-end items-center gap-12 mr-4">
+        <NavBarItem
+          refrencetag=" #about "
+          numbering=" 01. "
+          content=" About "
+        />
+        <NavBarItem
+          refrencetag="#experience"
+          numbering="02. "
+          content="Experience"
+        />
+        <NavBarItem
+          refrencetag="#projects"
+          numbering="03. "
+          content="Projects"
+        />
+        <NavBarItem refrencetag="#contact" numbering="04. " content="Contact" />
+      </ul>
+      <div className="flex sm:hidden justify-end mr-12 cursor-pointer md:hidden bg-slate-500 fixed inset-0 left-1/4">
+        <HamburgerMenuSVG />
+      </div>
+    </nav>
   );
 }

@@ -2,8 +2,7 @@ import React from "react";
 
 export default function AboutPage() {
   return (
-    <section>
-
+    <section className="bg-rose-700">
       <p className="text-3xl font-bold underline">
         Hello world!
       </p>
