@@ -1,16 +1,21 @@
 @media all {
-    body {
-        background: #202731;
-        color:white;
-        min-width: 700px;
-    }
 
-    section {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-height: 100vh;
-        padding: 100px 20vw;
-    }
+  section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 100px 20vw;
+    align-items: center;
+  }
+
+  /* scrollbar */
+  div::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  div::-webkit-scrollbar-thumb {
+    border: 2px solid #ffffff2f;
+    border-radius: 20px;
+  }
 }

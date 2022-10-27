@@ -1,4 +1,4 @@
-import HomePage from "./pages/HomePage";
+import Hero from "./pages/Hero";
 import AboutPage from "./pages/AboutPage";
 import ExperiencePage from "./pages/ExperiencePage";
 import ProjectsPage from "./pages/ProjectsPage";
@@ -13,7 +13,7 @@ function App() {
       <NavBar />
       <div className="">
         <div className="font-Poppins">
-          <HomePage />
+          <Hero />
           <AboutPage />
           <ExperiencePage />
           <ProjectsPage />
