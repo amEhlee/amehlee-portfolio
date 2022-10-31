@@ -2,8 +2,8 @@ import React from "react";
 
 export default function ExperiencePage() {
   return (
-    <section className="bg-slate-900">
-      <h1>Experience Page</h1>
+    <section className="bg-rose-800">
+      <h1 className="smaller-heading">Experience</h1>
       <p>
         <hr/>
         React React Native Node.js

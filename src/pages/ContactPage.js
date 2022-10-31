@@ -3,25 +3,34 @@ import React from "react";
 export default function ContactPage() {
   return (
     <section className="bg-slate-900">
-      <h1>So, Lets hear about your project!</h1>
-      <p>I'm free to contact using the resources down below</p>
-      <label for="fname">Name:</label>
-      <input
-        type="text"
-        id="fname"
-        name="firstname"
-        placeholder="Your name.."
-      />
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Your Email.." />
-      <br />
-      <label for="textarea">Message:</label>
-      <input
-        type="textarea"
-        id="textarea"
-        name="textarea"
-        placeholder="Your name.."
-      />
+      <h1 className="smaller-heading text-slate-300">Contact</h1>
+      <div className="font-light text-slate-500 text-center">
+        <p>I'm free to contact using the resources down below</p>
+        <div className="m-4 p-7 rounded bg-slate-100 flex flex-col gap-4 min-w-[300px]">
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            class="block p-2.5 w-full text-sm rounded border bg-slate-200"
+            placeholder="Your name.."
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="block p-2.5 w-full text-sm rounded border bg-slate-200"
+            placeholder="Your Email.."
+          />
+          <textarea
+            id="message"
+            rows="6"
+            class="block p-2.5 w-full text-sm rounded border bg-slate-200"
+            placeholder="Your message..."
+          ></textarea>
+          
+        </div>
+        <button type="button" class="text-white border-none duration-300 bg-slate-500 hover:bg-slate-700 focus:outline-none focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">Contact Me</button>
+      </div>
     </section>
   );
 }
