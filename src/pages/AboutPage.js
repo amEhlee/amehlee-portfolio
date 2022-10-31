@@ -1,28 +1,36 @@
 import React from "react";
+import wavehigh from "../assets/wave-high.svg";
 
 export default function AboutPage() {
   return (
-    <section className="bg-rose-700">
-      <p className="text-3xl font-bold underline">
-        Hello world!
-      </p>
-      <h1>Hi. I'm Elie, Nice to meet you!</h1>
-      <p>
-        I am a seasoned software expert who has developed products for
-        enterprise clients such as Intuit, Yale University, and Hewlett-Packard
-        (HP), as well as many venture-backed businesses. I specialize in
-        building applications specific to the business needs of my clients. I
-        have done work in software development, mobile app creation,
-        front-end/back-end web, database/server management, graphic design, and
-        video game development.
-      </p>
-      <p>
-        I am passionate about building excellent software that improves the
-        lives of those around me. I specialize in creating software for clients
-        ranging from individuals and small-businesses all the way to large
-        enterprise corporations. What would you do if you had a software expert
-        available at your fingertips?
-      </p>
-    </section>
+    <>
+      <section className="bg-slate-900">
+        <h1 className="smaller-heading text-slate-300">About</h1>
+        <div className="text-slate-500 font-light">
+          <p>Hello my name is Elie Kabengele Junior Full-Stack Developer</p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+            voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+            fugiat iusto fuga praesentium optio, eaque rerum! Provident
+            similique accusantium nemo autem. Veritatis obcaecati tenetur iure
+            eius earum ut molestias architecto voluptate aliquam nihil, eveniet
+            aliquid culpa officia aut! Impedit sit sunt quaerat, odit, tenetur
+            error, harum nesciunt ipsum debitis quas aliquid.
+          </p>
+
+          <ul className="grid mx-20 list-disc grid-cols-2 grid-rows-3 gap-x-20 place-items-center">
+            <li>Javascript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>Spring</li>
+          </ul>
+        </div>
+      </section>
+      <img className="w-full" src={wavehigh} alt="wave svg"></img>
+    </>
   );
 }
