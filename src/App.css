@@ -1,5 +1,10 @@
 @media all {
 
+  body {
+    height: 100vh;
+    margin: 0px;
+  }
+  
   section {
     position: relative;
     display: flex;
@@ -9,13 +14,4 @@
     align-items: center;
   }
 
-  /* scrollbar */
-  div::-webkit-scrollbar {
-    width: 12px;
-  }
-
-  div::-webkit-scrollbar-thumb {
-    border: 2px solid #ffffff2f;
-    border-radius: 20px;
-  }
 }

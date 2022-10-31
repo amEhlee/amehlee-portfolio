@@ -3,10 +3,8 @@ import React from "react";
 export default function AboutPage() {
   return (
     <section className="bg-rose-700">
-      <p className="text-3xl font-bold underline">
-        Hello world!
-      </p>
-      <h1>Hi. I'm Elie, Nice to meet you!</h1>
+      <h2 className="">Hi. Nice to Meet You!</h2>
+      <p>Hello my name is Elie Kabengele Junior Full-Stack Developer</p>
       <p>
         I am a seasoned software expert who has developed products for
         enterprise clients such as Intuit, Yale University, and Hewlett-Packard
@@ -23,6 +21,15 @@ export default function AboutPage() {
         enterprise corporations. What would you do if you had a software expert
         available at your fingertips?
       </p>
+
+        <ul className="grid list-disc grid-cols-2 grid-rows-3 gap-x-20">
+          <li>Javascript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>Spring</li>
+        </ul>
     </section>
   );
 }

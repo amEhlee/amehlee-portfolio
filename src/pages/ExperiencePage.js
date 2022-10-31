@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ExperiencePage() {
   return (
-    <section className="bg-yellow-600">
+    <section className="bg-slate-900">
       <h1>Experience Page</h1>
       <p>
         <hr/>

@@ -14,7 +14,9 @@ function NavBarItem(props) {
   return (
     <li className="">
       <a href={props.refrencetag}>
-        <span className="text-black-600 font-bold">{props.numbering}</span>
+        <span className="text-black-600 font-bold text-blue-300">
+          {props.numbering}
+        </span>
         {props.content}
       </a>
     </li>
@@ -23,11 +25,11 @@ function NavBarItem(props) {
 
 export default function NavBar() {
   return (
-    <nav className="flex items-center py-4 justify-between bg-slate-600">
+    <nav className="flex items-center py-4 justify-between">
       <div className="Logo ml-8">
         <a href="#home">Logo</a>
       </div>
-      <ul className="hidden sm:flex flex-1 justify-end items-center gap-12 mr-4">
+      <ul className="hidden sm:flex flex-1 justify-end items-center gap-12 mr-4 ">
         <NavBarItem
           refrencetag=" #about "
           numbering=" 01. "

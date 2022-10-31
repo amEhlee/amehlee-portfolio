@@ -11,15 +11,13 @@ function App() {
   return (
     <>
       <NavBar />
-      <div className="">
-        <div className="font-Poppins">
-          <Hero />
-          <AboutPage />
-          <ExperiencePage />
-          <ProjectsPage />
-          <ContactPage />
-          <FooterBlock />
-        </div>
+      <div className="font-Poppins">
+        <Hero />
+        <AboutPage />
+        <ExperiencePage />
+        <ProjectsPage />
+        <ContactPage />
+        <FooterBlock />
       </div>
     </>
   );
