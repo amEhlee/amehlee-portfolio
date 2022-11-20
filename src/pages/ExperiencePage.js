@@ -5,14 +5,9 @@ export default function ExperiencePage() {
     <section className="bg-rose-800">
       <h1 className="smaller-heading">Experience</h1>
       <p>
-        <hr/>
-        React React Native Node.js
-        <hr/>
-        Rapid Prototyping Functional Programming Interaction Development
-        Responsive Design Testing & Debugging Application Architecture
-        <hr/>
-        Sketch Principle Abstract
-        <hr/>
+        React React Native Node.js Rapid Prototyping Functional Programming
+        Interaction Development Responsive Design Testing & Debugging
+        Application Architecture Sketch Principle Abstract
       </p>
     </section>
   );

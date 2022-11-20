@@ -1,10 +1,9 @@
 @media all {
-
   body {
     height: 100vh;
     margin: 0px;
   }
-  
+
   section {
     position: relative;
     display: flex;
@@ -21,11 +20,11 @@
   }
 
   a {
-    transition :0.3s;
+    transition: 0.3s;
   }
 
   a:hover {
-    color:#93c5fd;
+    color: #93c5fd;
   }
 
   button {
@@ -40,14 +39,39 @@
     height: 5px;
     background-color: #0f172a;
   }
-    ::-webkit-scrollbar-track {
-      display: none;
+  ::-webkit-scrollbar-track {
+    display: none;
   }
-    ::-webkit-scrollbar-thumb {
-    background: #888; 
-      border-radius:10px;
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  } 
+    background: #555;
+  }
+
+  /*CSS Animations*/
+  @keyframes orbit {
+    49% {
+      z-index: 1;
+    }
+    50% {
+      left: 25em;
+      z-index: -1;
+    }
+    99% {
+      z-index: -1;
+    }
+    100% {
+      left: -11em;
+      z-index: 1;
+    }
+  }
+
+  .shieldIcons {
+    position: aboslute;
+    left: -11em;
+    animation: orbit 20s infinte ease-in-out;
+    z-index: 1;
+  }
 }
