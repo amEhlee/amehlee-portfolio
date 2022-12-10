@@ -19,19 +19,19 @@ export default function ContactPage() {
       <h1 className="smaller-heading text-slate-300">Contact</h1>
       <div className="font-light text-slate-500 text-center">
         <p>I'm free to contact using the resources down below</p>
-        <div className="m-4 p-7 rounded bg-slate-100 flex flex-col gap-4 min-w-[300px] lg:min-w-[500px] ">
+        <div className="m-4 p-7 rounded bg-white flex flex-col gap-4 min-w-[300px] lg:min-w-[500px] ">
           <input
             type="email"
             id="email"
             name="email"
-            class="block p-2.5 w-full text-sm rounded border bg-slate-200"
+            class="block p-2.5 w-full text-sm rounded border-none bg-slate-100"
             placeholder="Your Email.."
             ref={emailRef}
           />
           <textarea
             id="message"
             rows="6"
-            class="block p-2.5 w-full text-sm rounded border bg-slate-200"
+            class="block p-2.5 w-full text-sm rounded border-none bg-slate-100"
             placeholder="Your message..."
             ref={messageRef}
           ></textarea>
