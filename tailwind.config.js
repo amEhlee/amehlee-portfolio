@@ -2,23 +2,26 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
-    fontFamily: {
-      Poppins: ["Poppins, sans-serif"],
-    },
-    container : {
-      center: true,
-      padding: '1rem',
+    extend: {
+      fontFamily: {
+        sans: ["Graphik", "sans-serif"],
+        serif: ["Merriweather", "serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
+      colors: {
+        primaryOrange: "#F26722",
+        primaryLightBlue: "#93c5fd",
+        primaryWhite: "#FFFFFF",
+        primaryOffWhite: "#F0F0F0",
+        primaryBlack: "#000000",
+      },
       screens: {
-        'sm': '640px',
-        'md': '768px',  
-        'lg': '1024px',  
-        'xl': '1280px',  
-        '2xl': '1536px',      }
+        'sm': '378px',
+      },
     },
   },
-  plugins: [],
-}
-
+  plugins: [require("flowbite/plugin")],
+};
