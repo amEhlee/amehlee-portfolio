@@ -42,9 +42,9 @@ function AboutCard(props) {
 export default function AboutPage() {
   return (
     <>
-      <section className="bg-slate-900 lg:px-[20vw]">
+      <section className="bg-slate-900 px-[20vw]">
         <h1 className="smaller-heading text-slate-300">About</h1>
-        <p className=" text-slate-500 font-light text-center">
+        <p className=" text-slate-500 font-light text-center lg:px-[10vw]">
           Starting from my humble days coding small indie projects I've come a
           long way. I've done remote work for a variety of groups and projects
           and collaborated with talent far above myself to reach a common goal.

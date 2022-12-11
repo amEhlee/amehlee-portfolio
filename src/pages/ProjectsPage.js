@@ -1,31 +1,34 @@
 import React from "react";
 import { Carousel, Card, Button } from "flowbite-react";
-import PortfolioImage2 from "../assets/portfolioImage2.jpg";
+
+// import images of projects
+import PortfolioPage from "../assets/PortfolioPage.jpg";
+import CapstonePeralta from "../assets/CapstonePeralta.jpg";
+import UnityPlatformer from "../assets/UnityPlatformer.jpg";
 
 export function ProjectCard(props) {
   return (
     <div className="px-20 py-10">
-      <Card
-        imgAlt={props.imageAlt}
-        imgSrc={props.imageSource}
-        className="min-h-[500px]"
-      >
-        <h5 className="text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">
-          {props.title}
-        </h5>
-        <p className="font-normal text-gray-700 dark:text-gray-400">
-          {props.description}
-        </p>
+      <Card imgAlt={props.imageAlt} imgSrc={props.imageSource}>
+        <div className="flex flex-col items-center justify-center">
+          <h5 className="text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white">
+            {props.title}
+          </h5>
+          <p className="font-normal text-center text-gray-700 dark:text-gray-400">
+            {props.description}
+          </p>
 
-        <Button
-          gradientDuoTone={props.gradientColor}
-          href={props.githubLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="duration-500"
-        >
-          {props.linktype}
-        </Button>
+          <Button
+            gradientDuoTone={props.gradientColor}
+            outline={true}
+            href={props.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="duration-500 max-w-fit mt-4 hover:text-white"
+          >
+            {props.linktype}
+          </Button>
+        </div>
       </Card>
     </div>
   );
@@ -42,7 +45,7 @@ export default function ProjectsPage() {
         </p>
         <Carousel slide={false} className="sm:min-w-[400px] md:min-w-[550px]">
           <ProjectCard
-            imageSource={PortfolioImage2}
+            imageSource={CapstonePeralta}
             imageAlt="Capstone Peralta Image"
             title="Capstone Peralta"
             description="E-commerce app made for my final year of SAIT for our first client. Fill Carts, place Orders all built using Spring and React"
@@ -51,7 +54,7 @@ export default function ProjectsPage() {
             githubLink="https://github.com/amEhlee/Capstone-Peralta"
           />
           <ProjectCard
-            imageSource={PortfolioImage2}
+            imageSource={PortfolioPage}
             imageAlt="Card Portfolio Image"
             title="Elie Kabengele Portfolio"
             description="My portfolio page made to accompany my resume. Built using React and Tailwind CSS for styling."
@@ -60,7 +63,7 @@ export default function ProjectsPage() {
             githubLink="https://github.com/amEhlee/amehlee-portfolio"
           />
           <ProjectCard
-            imageSource={PortfolioImage2}
+            imageSource={UnityPlatformer}
             imageAlt="Unity Platformer Image"
             title="Unity Platformer Using C#"
             description="Blog post detailing how to build a platformer in C# using Unity. The player will be able to run, jump and interact with the world"
