@@ -3,18 +3,18 @@
 @tailwind utilities;
 
 @layer base {
-  h1.big-heading {
+  h1 {
     /*TODO cleanup this crap*/
     font-size: clamp(40px, 8vw, 80px);
     font-weight: 800;
     white-space: nowrap;
   }
-  h1.smaller-heading {
+  h2 {
     font-size: clamp(30px, 8vw, 50px);
     font-weight: 800;
     white-space: nowrap;
   }
-  h2, h3 {
+  h3, h3 {
     @apply text-xl;
   }
   body {
