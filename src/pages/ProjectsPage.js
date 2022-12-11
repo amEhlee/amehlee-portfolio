@@ -43,7 +43,7 @@ export default function ProjectsPage() {
           Lay of projects i've done using a variety of technologies and
           resources
         </p>
-        <Carousel slide={false} className="sm:min-w-[400px] md:min-w-[550px]">
+        <Carousel slide={false} className="min-w-[400px] sm:min-w-[400px] md:min-w-[550px]">
           <ProjectCard
             imageSource={CapstonePeralta}
             imageAlt="Capstone Peralta Image"

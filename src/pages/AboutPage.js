@@ -4,7 +4,7 @@ import { Card } from "flowbite-react";
 function AboutCard(props) {
   return (
     <Card>
-      <div className="flex flex-col items-center pb-10 basis-1/3">
+      <div className="flex flex-col items-center pb-10">
         <img
           className="mb-3 h-24 w-24 rounded-full shadow-lg"
           src={props.ImageSource}
@@ -53,7 +53,7 @@ export default function AboutPage() {
         <p className="mt-10 mb-4 text-blue-300 text-center whitespace-nowrap">
           Here's a lay of my skills!
         </p>
-        <div className="flex sm:flex-col lg:flex-row gap-4">
+        <div className="flex flex-col sm:flex-col lg:flex-row gap-4">
           <AboutCard
             Shield1="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
             Shield2="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white"

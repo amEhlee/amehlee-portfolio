@@ -1,21 +1,64 @@
+import React, { useRef } from "react";
+import { Navbar } from "flowbite-react";
+
+// import pages
+// TODO:remove import ExperiencePage from "./pages/ExperiencePage";
 import Hero from "./pages/Hero";
 import AboutPage from "./pages/AboutPage";
-// TODO:remove import ExperiencePage from "./pages/ExperiencePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
 import FooterBlock from "./pages/FooterBlock";
-import NavBar from "./components/NavBar";
 
 function App() {
+  const HeroRef = useRef(null);
+  const AboutRef = useRef(null);
+  const ProjectsRef = useRef(null);
+  const ContactMeRef = useRef(null);
+
+  function handleScroll(givenRef) {
+    givenRef.current?.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <>
-      <NavBar />
+      <Navbar fluid={true} rounded={true} className="">
+        <a href="#Home" className="no-underline text-black">
+          <Navbar.Brand>
+            <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white text-black">
+              Elie Kabengele
+            </span>
+          </Navbar.Brand>
+        </a>
+        <Navbar.Toggle />
+        <Navbar.Collapse>
+          <button onClick={() => {handleScroll(HeroRef);}}>
+            <Navbar.Link>Home</Navbar.Link>
+          </button>
+          <button onClick={() => {handleScroll(AboutRef);}}>
+            <Navbar.Link>About</Navbar.Link>
+          </button>
+          <button onClick={() => {handleScroll(ProjectsRef);}}>
+            <Navbar.Link>Projects</Navbar.Link>
+          </button>
+          <button onClick={() => {handleScroll(ContactMeRef);}}>
+            <Navbar.Link>Contact Me</Navbar.Link>
+          </button>
+        </Navbar.Collapse>
+      </Navbar>
+
       <div className="font-Poppins">
-        <Hero />
-        <AboutPage />
-        {/* <ExperiencePage/> */}
-        <ProjectsPage />
-        <ContactPage />
+        <div ref={HeroRef}>
+          <Hero />
+        </div>
+        <div ref={AboutRef}>
+          <AboutPage />
+        </div>
+        <div ref={ProjectsRef}>
+          <ProjectsPage />
+        </div>
+        <div ref={ContactMeRef}>
+          <ContactPage />
+        </div>
         <FooterBlock />
       </div>
     </>

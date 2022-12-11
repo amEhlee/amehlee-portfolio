@@ -19,7 +19,7 @@ module.exports = {
         primaryBlack: "#000000",
       },
       screens: {
-        'sm': '378px',
+        'sm': '320px',
       },
     },
   },

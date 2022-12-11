@@ -28,7 +28,7 @@ export function ProjectCard(props) {
 export default function ExperiencePage() {
   return (
     <section className="bg-slate-900">
-      <h1 className="smaller-heading text-slate-300">Experience</h1>
+      <h1 className="text-slate-300">Experience</h1>
       <div>
         <ProjectCard
           imageSource={PortfolioImage}
