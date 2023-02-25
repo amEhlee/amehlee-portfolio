@@ -2,9 +2,9 @@ import React from "react";
 import { Carousel, Card, Button } from "flowbite-react";
 
 // import images of projects
-import PortfolioPage from "../assets/PortfolioPage.jpg";
-import CapstonePeralta from "../assets/CapstonePeralta.jpg";
-import UnityPlatformer from "../assets/UnityPlatformer.jpg";
+import PortfolioPage from "../assets/images/PortfolioPage.jpg";
+import CapstonePeralta from "../assets/images/CapstonePeralta.jpg";
+import UnityPlatformer from "../assets/images/UnityPlatformer.jpg";
 
 export function ProjectCard(props) {
   return (
@@ -37,7 +37,7 @@ export function ProjectCard(props) {
 export default function ProjectsPage() {
   return (
     <>
-      <section className="bg-slate-900">
+      <section className="bg-primaryBgDark">
         <h1 className="smaller-heading text-slate-300">Projects</h1>
         <p className="text-slate-500 font-light text-center">
           Lay of projects i've done using a variety of technologies and

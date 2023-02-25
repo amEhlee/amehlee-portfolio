@@ -3,11 +3,11 @@ import { Navbar } from "flowbite-react";
 
 // import pages
 // TODO:remove import ExperiencePage from "./pages/ExperiencePage";
-import Hero from "./pages/Hero";
-import AboutPage from "./pages/AboutPage";
-import ProjectsPage from "./pages/ProjectsPage";
-import ContactPage from "./pages/ContactPage";
-import FooterBlock from "./pages/FooterBlock";
+import Hero from "./components/Hero";
+import AboutPage from "./components/AboutPage";
+import ProjectsPage from "./components/ProjectsPage";
+import ContactPage from "./components/ContactPage";
+import FooterBlock from "./components/FooterBlock";
 
 function App() {
   const HeroRef = useRef(null);
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <Navbar fluid={true} rounded={true} className="">
+      <Navbar fluid={true} rounded={true}>
         <a href="#Home" className="no-underline text-black">
           <Navbar.Brand>
             <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white text-black">

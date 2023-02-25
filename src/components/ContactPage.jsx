@@ -15,7 +15,7 @@ export default function ContactPage() {
   }
 
   return (
-    <section className="bg-slate-900">
+    <section className="bg-primaryBgDark">
       <h1 className="smaller-heading text-slate-300">Contact</h1>
       <div className="font-light text-slate-500 text-center">
         <p>I'm free to contact using the resources down below</p>
